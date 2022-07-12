@@ -25,8 +25,8 @@ def valid_path(grid = 10, start_point = (0,0), delivery_point = (9,9), obstacle_
             if next_point[1] < 0 or next_point[1] > (grid -1):
                 continue
 
-        valid_points.append(next_point) 
-        prev_points[next_point] = cur_point
+            valid_points.append(next_point) 
+            prev_points[next_point] = cur_point
     
     path = [delivery_point]
     while path[-1] != start_point:
